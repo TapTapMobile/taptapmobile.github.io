@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Responsive Charts Plugin</title>
+
+    <link href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style/demoTheme.css" rel="stylesheet" />
+    <link href="style/chartSizes.css" rel="stylesheet" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi, width=device-width" />
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!--Chart HTML-->
+                <!--Chart HTML-->
+                <div id="colchart1" data-gchart
+                     data-chartsize="xx-large-chart"
+                     data-charttitle="Column Chart"
+                     data-horizontalcharttitle="Set Horizontal Axis Title"
+                     data-verticalcharttitle="Set Vertical Axis Title"
+                     data-containername="colchart1"
+                     data-datasource="https://docs.google.com/spreadsheet/ccc?key=0AkDJgEzvX6DDdFByWUdQNTZaZ09rU3dxNEREVUhjZnc"
+                     data-gcharttype="column">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <!--Chart HTML-->
+                <div id="candlestickchart1" data-gchart
+                     data-chartsize="xx-large-chart"
+                     data-charttitle="Candlestick Chart"
+                     data-horizontalcharttitle="Set Horizontal Axis Title"
+                     data-verticalcharttitle="Set Vertical Axis Title"
+                     data-containername="candlestickchart1"
+                     data-datasource="https://docs.google.com/spreadsheet/ccc?key=0AkDJgEzvX6DDdHZwNUhMSVN3bU5TWTZxSWtWRG1lMnc"
+                     data-gcharttype="candlestick">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script src="scripts/plugin/smartResize.js"></script>
+    <script src="scripts/plugin/chartsPlugin.js"></script>
+    <script src="scripts/plugin/chartsPluginGEO.js"></script>
+    <script>
+        $(document).chartsPlugin({
+            chartsFont: 'Open Sans',
+            colors: ['#52656B', '#FF3B77', '#CDFF00', '#B8B89F', '#FFFFFF']
+        });
+    </script>
+</body>
+</html>
