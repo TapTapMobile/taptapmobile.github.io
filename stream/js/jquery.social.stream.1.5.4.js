@@ -37,7 +37,7 @@
 						retweets: false,
 						replies: false,
 						images: '', // large w: 786 h: 346, thumb w: 150 h: 150, medium w: 600 h: 264, small w: 340 h 150
-						url: '/stream/twitter.php',
+						url: 'stream/twitter.php',
 						icon: 'twitter.png'
 					},
 					google: {
