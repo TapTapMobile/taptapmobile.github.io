@@ -16,7 +16,7 @@
     <div class="container">
         <div class="row" class="highlight">
             <div class="col-md-9">
-                <!--Chart HTML-->
+                <!--Chart 1-->
                 <div id="barchart1" data-gchart
                      data-chartSize="x-large-chart"
                      data-chartTitle="Banner sizes"
@@ -27,6 +27,7 @@
                      data-gChartType="bar">
                 </div>
             </div>
+            <!--Chart 1 Description-->
             <div class="col-md-3">
                 <h3>Description</h3>
               <p>This graph shows which banner ad size is more popular, per country.</p>
@@ -50,7 +51,7 @@
         </div>
         <div class="row">
             <div class="col-md-9">
-                <!--Chart HTML-->
+                <!--Chart 2-->
                 <div id="piechart1" data-gchart
                      data-chartsize="x-large-chart"
                      data-charttitle="Banner-ad distribution, per country"
@@ -61,7 +62,8 @@
                      data-gcharttype="pie">
                 </div>
             </div>
-                    <div class="col-md-3 ">
+            <!--Chart 2 Description-->
+             <div class="col-md-3 ">
                 <h3>Description</h3>
               <p>Shows the sampling sizes per country</p>
               <div class="bs-example">
@@ -70,47 +72,41 @@
                   <dd>For the 15 countries sites' scraped, each country received equal attention. Although some countries have less info readily available.</dd>
                   <dt>Percentages</dt>
                   <dd>The Percentages show the relative size of the dataframe each country received</dd>
-                  <dd>Donec id elit non mi porta gravida at eget metus.</dd>
-                  <dt>Malesuada porta</dt>
-                  <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
                 </dl>
               </div>
-            <div class="highlight"><pre><code class="html"><span class="nt">&lt;nothing special to mention here&gt;</span>
-              <span class="nt">&lt;dt&gt;</span>...<span class="nt">&lt;/dt&gt;</span>
-              <span class="nt">&lt;dd&gt;</span>...<span class="nt">&lt;/dd&gt;</span>
-            <span class="nt">&lt;/dl&gt;</span>
-            </code></pre></div>
             </div>
           </div>
-
-            <div class="col-md-6">
-                <!--Chart HTML-->
+          <div class="row">
+            <div class="col-md-9">
+                <!--Chart 3-->
                 <div id="bubblechart1" data-gchart
-                     data-chartsize="large-chart"
+                     data-chartsize="x-large-chart"
                      data-charttitle="Bubble Chart"
-                     data-horizontalcharttitle="Set Horizontal Axis Title"
-                     data-verticalcharttitle="Set Vertical Axis Title"
+                     data-horizontalcharttitle="Amount of banner-ads"
+                     data-verticalcharttitle="Population/Banner-ads"
                      data-containername="bubblechart1"
                      data-datasource="https://docs.google.com/spreadsheet/ccc?key=0AtXDgp9m-UEHdF9fX3lidnBMTXBQODVuTnFlT3FFWlE&usp=sharing"
                      data-gcharttype="bubble">
                 </div>
             </div>
              <div class="col-md-3 ">
-            <!--Chart HTML-->
-                <div id="colchart1" data-gchart
-                     data-chartsize="large-chart"
-                     data-charttitle="Column Chart"
-                     data-horizontalcharttitle="Set Horizontal Axis Title"
-                     data-verticalcharttitle="Set Vertical Axis Title"
-                     data-containername="colchart1"
-                     data-datasource="https://docs.google.com/spreadsheet/ccc?key=0AkDJgEzvX6DDdFByWUdQNTZaZ09rU3dxNEREVUhjZnc"
-                     data-gcharttype="column">
-                </div>
+             <!--Chart 3 Description-->
+                <h3>Description</h3>
+              <p>Shows the sampling sizes per country</p>
+              <div class="bs-example">
+                <dl>
+                  <dt>Breakdown</dt>
+                  <dd>For the 15 countries sites' scraped, each country received equal attention. Although some countries have less info readily available.</dd>
+                  <dt>Percentages</dt>
+                  <dd>The Percentages show the relative size of the dataframe each country received</dd>
+                </dl>
               </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <!--Chart HTML-->
+            </div>
+           </div>
+
+       <div class="row" class="highlight">
+            <div class="col-md-9">
+                <!--Candlestick Chart HTML-->
                 <div id="candlestickchart1" data-gchart
                      data-chartsize="large-chart"
                      data-charttitle="Candlestick Chart"
@@ -121,8 +117,31 @@
                      data-gcharttype="candlestick">
                 </div>
             </div>
-            <div class="col-md-6">
-                <!--Chart HTML-->
+            <!--CandlestickChart  Description-->
+            <div class="col-md-3">
+                <h3>CandlestickChart  Description</h3>
+              <p>This graph shows which banner ad size is more popular, per country.</p>
+              <div class="bs-example">
+                <dl>
+                  <dt>Banner sizes scraped (width/height):</dt>
+                  <dd>300w 250h; 728w 90h; 468w 60h; 160w 600h</dd>
+                  <dt>Dataframe:</dt>
+                  <dd>A total of 16824 banners were scraped, in 15 countries.</dd>
+                  <dd>The Websites scraped are relevant to each country, although scraping errors are bound to occur. See notes below.</dd>
+                  <dt>Time Frame</dt>
+                  <dd>365 days prior to 17 May 2014</dd>
+                </dl>
+              </div>
+            <div class="highlight"><pre><code class="html"><span class="nt">&lt;468 wide x 60 pixels high is clearly the favourite banner on the www&gt;</span>
+              <span class="nt">&lt;dt&gt;</span>...<span class="nt">&lt;/dt&gt;</span>
+              <span class="nt">&lt;dd&gt;</span>...<span class="nt">&lt;/dd&gt;</span>
+            <span class="nt">&lt;/dl&gt;</span>
+            </code></pre></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <!--LineChart HTML-->
                 <div id="linechart1" data-gchart
                      data-chartsize="large-chart"
                      data-charttitle="Line Chart"
@@ -133,12 +152,65 @@
                      data-gcharttype="line">
                 </div>
             </div>
+         <!--LineChart  Description-->
+            <div class="col-md-3">
+                <h3>LineChart  Description</h3>
+              <p>This graph shows which banner ad size is more popular, per country.</p>
+              <div class="bs-example">
+                <dl>
+                  <dt>Banner sizes scraped (width/height):</dt>
+                  <dd>300w 250h; 728w 90h; 468w 60h; 160w 600h</dd>
+                  <dt>Dataframe:</dt>
+                  <dd>A total of 16824 banners were scraped, in 15 countries.</dd>
+                  <dd>The Websites scraped are relevant to each country, although scraping errors are bound to occur. See notes below.</dd>
+                  <dt>Time Frame</dt>
+                  <dd>365 days prior to 17 May 2014</dd>
+                </dl>
+              </div>
+            <div class="highlight"><pre><code class="html"><span class="nt">&lt;468 wide x 60 pixels high is clearly the favourite banner on the www&gt;</span>
+              <span class="nt">&lt;dt&gt;</span>...<span class="nt">&lt;/dt&gt;</span>
+              <span class="nt">&lt;dd&gt;</span>...<span class="nt">&lt;/dd&gt;</span>
+            <span class="nt">&lt;/dl&gt;</span>
+            </code></pre></div>
+            </div>
         </div>
-    </div>
 
+        <div class="row" class="highlight">
+            <div class="col-md-9">
+                <!--Column Chart -->
+                <div id="colchart1" data-gchart
+                     data-chartsize="large-chart"
+                     data-charttitle="Column Chart"
+                     data-horizontalcharttitle="Set Horizontal Axis Title"
+                     data-verticalcharttitle="Set Vertical Axis Title"
+                     data-containername="colchart1"
+                     data-datasource="https://docs.google.com/spreadsheet/ccc?key=0AkDJgEzvX6DDdFByWUdQNTZaZ09rU3dxNEREVUhjZnc"
+                     data-gcharttype="column">
+                </div>
 
-    
-
+            </div>
+              <!--Chart 1 Description-->
+            <div class="col-md-3">
+                <h3>Description</h3>
+              <p>This graph shows which banner ad size is more popular, per country.</p>
+              <div class="bs-example">
+                <dl>
+                  <dt>Banner sizes scraped (width/height):</dt>
+                  <dd>300w 250h; 728w 90h; 468w 60h; 160w 600h</dd>
+                  <dt>Dataframe:</dt>
+                  <dd>A total of 16824 banners were scraped, in 15 countries.</dd>
+                  <dd>The Websites scraped are relevant to each country, although scraping errors are bound to occur. See notes below.</dd>
+                  <dt>Time Frame</dt>
+                  <dd>365 days prior to 17 May 2014</dd>
+                </dl>
+              </div>
+            <div class="highlight"><pre><code class="html"><span class="nt">&lt;468 wide x 60 pixels high is clearly the favourite banner on the www&gt;</span>
+              <span class="nt">&lt;dt&gt;</span>...<span class="nt">&lt;/dt&gt;</span>
+              <span class="nt">&lt;dd&gt;</span>...<span class="nt">&lt;/dd&gt;</span>
+            <span class="nt">&lt;/dl&gt;</span>
+            </code></pre></div>
+            </div>
+         </div>
 
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
     <script src="http://www.google.com/jsapi" type="text/javascript"></script>
