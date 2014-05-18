@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ad delivery Charts</title>
+
+    <link href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style/demoTheme.css" rel="stylesheet" />
+    <link href="style/chartSizes.css" rel="stylesheet" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi, width=device-width" />
+
+</head>
+<body>
+
+    <div class="container">
+      <!--Nav-->
+      <ul class="nav nav-pills">
+      <li><a href="#">Home</a></li>
+      <li class="active"><a href="#">Country Profiles</a></li>
+      <li><a href="#">Niche Profiles</a></li>
+      </ul>
+      <!--End of Nav-->
+        <div class="row highlight well">
+            <div class="col-md-9">
+                <!--Chart 1-->
+                <div id="barchart1" data-gchart
+                     data-chartSize="x-large-chart"
+                     data-chartTitle="Banner sizes"
+                     data-horizontalChartTitle="Banner Sizes"
+                     data-verticalChartTitle="Amount of Banners"
+                     data-containerName="barchart1"
+                     data-dataSource="https://docs.google.com/spreadsheet/ccc?key=0AtXDgp9m-UEHdDlqNFRiY0FFYTdKbGZKeEUwdjFQbEE"
+                     data-gChartType="bar">
+                </div>
+            </div>
+            <!--Chart 1 Description-->
+            <div class="col-md-3">
+                <h3>Description</h3>
+              <p>This graph shows which banner ad size is more popular, per country.</p>
+              <div class="bs-example">
+                <dl>
+                  <dt>Banner sizes scraped (width/height):</dt>
+                  <dd><button type="button" class="btn btn-info btn-sm">300w 250h</button> <dd><button type="button" class="btn btn-info btn-sm">728w 90h</button><dd><button type="button" class="btn btn-info btn-sm">468w 60h</button><dd><button type="button" class="btn btn-info btn-sm">160w 600h</button> </dd>
+                  <dt>Dataframe:</dt>
+                  <dd>A total of 16824 banners were scraped, in 15 countries.</dd>
+                  <dd>The Websites scraped are relevant to each country, although scraping errors are bound to occur. See notes below.</dd>
+                  <dt>Time Frame</dt>
+                  <dd>365 days prior to 17 May 2014</dd>
+                </dl>
+              </div>
+            </div>
+        </div>
+
+        <div class="row highlight well">
+            <div class="col-md-4">
+                <!--Chart 2-->
+                <div id="barchart2" data-gchart
+                     data-chartSize="med-chart"
+                     data-chartTitle="Canada"
+                     data-horizontalChartTitle="Niche"
+                     data-verticalChartTitle="Amount of DR banners"
+                     data-containerName="barchart2"
+                     data-dataSource="https://docs.google.com/spreadsheet/ccc?key=0AtXDgp9m-UEHdDlqNFRiY0FFYTdKbGZKeEUwdjFQbEE"
+                     data-gChartType="bar">
+                </div>
+            </div>    
+                <!--Chart 3-->
+                <div class="col-md-4">
+                <div id="barchart3" data-gchart
+                     data-chartSize="med-chart"
+                     data-chartTitle="Banner sizes"
+                     data-horizontalChartTitle="Banner Sizes"
+                     data-verticalChartTitle="Amount of Banners"
+                     data-containerName="barchart3"
+                     data-dataSource="https://docs.google.com/spreadsheet/ccc?key=0AtXDgp9m-UEHdEJ0MF9tMjlVaUNraUFBT19taGNERGc&usp=sharing"
+                     data-gChartType="bar">
+                </div>
+                 </div>
+                 <!--Chart 4-->
+                <div class="col-md-4">
+                <div id="barchart4" data-gchart
+                     data-chartSize="med-chart"
+                     data-chartTitle="Banner sizes"
+                     data-horizontalChartTitle="Banner Sizes"
+                     data-verticalChartTitle="Amount of Banners"
+                     data-containerName="barchart4"
+                     data-dataSource="https://docs.google.com/spreadsheet/ccc?key=0AtXDgp9m-UEHdEJ0MF9tMjlVaUNraUFBT19taGNERGc&usp=sharing"
+                     data-gChartType="bar">
+                </div>
+            </div>
+        </div>
+
+</div>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script src="scripts/plugin/smartResize.js"></script>
+    <script src="scripts/plugin/chartsPlugin.js"></script>
+    <script>
+        $(document).chartsPlugin({
+            chartsFont: 'Open Sans',
+            colors: ['#885d41','#9BC2E3', '#0400ff', '#FFB04F', '#ccccaa']
+        });
+    </script>
+</body>
+</html>
