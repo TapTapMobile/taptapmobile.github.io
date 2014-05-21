@@ -21,6 +21,9 @@
       <li><a href="#">Niche Profiles</a></li>
       </ul>
       <!--End of Nav-->
+      <div class="page-header">
+  <h1>The <a href="http://www.google.com/ads/displaynetwork/" target=_blank >GDN</a> Landscape <small>a survey of 16819 banner-ads, from 42,300 websites and apps, over 365 days</small></h1>
+</div>
         <div class="row highlight well">
             <div class="col-md-9">
                 <!--Chart 1-->
@@ -47,12 +50,9 @@
                   <dd>The Websites scraped are relevant to each country, although scraping errors are bound to occur. See notes below.</dd>
                   <dt>Time Frame</dt>
                   <dd>365 days prior to 17 May 2014</dd>
-                </dl>
+                 </dl>
               </div>
-            <div class="highlight"><pre><code class="html"><span class="nt">&lt;468 wide x 60 pixels high is clearly the favourite banner on the www&gt;</span>
-              <span class="nt">&lt;dt&gt;</span>...<span class="nt">&lt;/dt&gt;</span>
-              <span class="nt">&lt;dd&gt;</span>...<span class="nt">&lt;/dd&gt;</span>
-            <span class="nt">&lt;/dl&gt;</span>
+            <div class="highlight"><pre>468x60 is clearly the favourite banner on the web<code class="html">
             </code></pre></div>
             </div>
         </div>
@@ -88,7 +88,7 @@
                 <!--Chart 3-->
                 <div id="bubblechart1" data-gchart
                      data-chartsize="x-large-chart"
-                     data-charttitle="Bubble Chart"
+                     data-charttitle="Banner Advertising vs. Population"
                      data-horizontalcharttitle="Amount of banner-ads"
                      data-verticalcharttitle="Population/Banner-ads"
                      data-containername="bubblechart1"
@@ -218,7 +218,10 @@
             </code></pre></div>
             </div>
          </div>
-
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
     <script src="http://www.google.com/jsapi" type="text/javascript"></script>
     <script src="scripts/plugin/smartResize.js"></script>
@@ -226,7 +229,7 @@
     <script>
         $(document).chartsPlugin({
             chartsFont: 'Open Sans',
-            colors: ['#885d41','#9BC2E3', '#0400ff', '#FFB04F', '#ccccaa']
+            colors: ['#428bca','#d9534f', '#5bc0de', '#f0ad4e', '#5cb85c']
         });
     </script>
 </body>
