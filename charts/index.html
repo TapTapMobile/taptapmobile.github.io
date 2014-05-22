@@ -1,256 +1,252 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Ad delivery Charts</title>
-
-    <link href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://getbootstrap.com/assets/css/docs.min.css" rel="stylesheet">
-    <link href="style/demoTheme.css" rel="stylesheet" />
-    <link href="style/chartSizes.css" rel="stylesheet" />
-
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi, width=device-width" />
-
+<title>Ad delivery Charts</title>
+<link href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="style/demoTheme.css" rel="stylesheet" />
+<link href="style/chartSizes.css" rel="stylesheet" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi, width=device-width" />
 </head>
 <body>
-
-    <div class="container">
-<!--Nav-->
-      <ul class="nav nav-pills">
-      <li class="active"><a href="../charts/index.html">RnD Home</a></li>
-      <li><a href="../charts/topics-country.html">Country Profiles</a></li>
-      <li><a href="#">Niche Profiles</a></li>
-      </ul>
-
-<!-- Header
-================================================== -->
-<!-- Placed below -->
-      <div class="page-header">
-      <h1>The <abbr title="Advertising that is designed to generate a direct response from consumers, where each consumer's response can be measured, and attributed to individual advertisements">Direct-Response</abbr> Landscape on Google AdWords GDN</h1>
-      </div>
-      
-<!-- Body copy
-================================================== -->
-<!-- Placed below -->
-<p class="lead">a survey of 16819 banner-ads, from 42,300 websites and apps, over 365 days</p>
-
-<!-- Charts
-================================================== -->
-<!-- Placed below -->
-        <div class="row highlight well">
-            <div class="col-md-9">
-                <!--Chart 1-->
-                <div id="barchart1" data-gchart
+<div class="container"> 
+  <!--Nav-->
+  <ul class="nav nav-pills">
+    <li class="active"><a href="../charts/index.html">RnD Home</a></li>
+    <li><a href="../charts/topics-country.html">Country Profiles</a></li>
+    <li><a href="#">Niche Profiles</a></li>
+  </ul>
+  
+  <!-- Header
+================================================== --> 
+  <!-- Placed below -->
+  <div class="page-header">
+    <h1>The <abbr title="Advertising that is designed to generate a direct response from consumers, where each consumer's response can be measured, and attributed to individual advertisements">Direct-Response</abbr> Landscape on Google AdWords GDN</h1>
+  </div>
+  
+  <!-- Body copy
+================================================== --> 
+  <!-- Placed below -->
+  <p class="lead">a survey of 16819 banner-ads, from 42,300 websites and apps, over 365 days</p>
+  
+  <!-- Charts
+================================================== --> 
+  <!-- Placed below -->
+  <div class="row highlight well">
+    <div class="col-md-9"> 
+      <!--Chart 1-->
+      <div id="barchart1" data-gchart
                      data-chartSize="x-large-chart"
                      data-chartTitle="Banner sizes"
                      data-horizontalChartTitle="Banner Sizes"
                      data-verticalChartTitle="Amount of Banners"
                      data-containerName="barchart1"
                      data-dataSource="https://docs.google.com/spreadsheet/ccc?key=0AtXDgp9m-UEHdEJ0MF9tMjlVaUNraUFBT19taGNERGc"
-                     data-gChartType="bar">
-                </div>
-            </div>
-            <!--Chart 1 Description-->
-            <div class="col-md-3">
-                <h3>Description</h3>
-              <p>This graph shows which banner ad size is more popular, per country.</p>
-              <div class="bs-example">
-                <dl>
-                  <dt>Banner sizes scraped (width/height):</dt>
-                  <dd><button type="button" class="btn btn-info btn-sm">300w 250h</button> <dd><button type="button" class="btn btn-info btn-sm">728w 90h</button><dd><button type="button" class="btn btn-info btn-sm">468w 60h</button><dd><button type="button" class="btn btn-info btn-sm">160w 600h</button> </dd>
-                  <dt>Dataframe:</dt>
-                  <dd>A total of 16824 banners were scraped, in 15 countries.</dd>
-                  <dd>The Websites scraped are relevant to each country, although scraping errors are bound to occur. See notes below.</dd>
-                  <dt>Time Frame</dt>
-                  <dd>365 days prior to 17 May 2014</dd>
-                 </dl>
-              </div>
-            <div class="highlight"><pre>468x60 is clearly the favourite banner on the web<code class="html">
-            </code></pre></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-9">
-                <!--Chart 2-->
-                <div id="piechart1" data-gchart
+                     data-gChartType="bar"> </div>
+    </div>
+    <!--Chart 1 Description-->
+    <div class="col-md-3">
+      <h3>Description</h3>
+      <p>This graph shows which banner ad size is more popular, per country.</p>
+      <div class="bs-example">
+        <dl>
+          <dt>Banner sizes scraped (width/height):</dt>
+          <dd>
+            <button type="button" class="btn btn-info btn-sm">300w 250h</button>
+          <dd>
+            <button type="button" class="btn btn-info btn-sm">728w 90h</button>
+          <dd>
+            <button type="button" class="btn btn-info btn-sm">468w 60h</button>
+          <dd>
+            <button type="button" class="btn btn-info btn-sm">160w 600h</button>
+          </dd>
+          <dt>Dataframe:</dt>
+          <dd>A total of 16824 banners were scraped, in 15 countries.</dd>
+          <dd>The Websites scraped are relevant to each country, although scraping errors are bound to occur. See notes below.</dd>
+          <dt>Time Frame</dt>
+          <dd>365 days prior to 17 May 2014</dd>
+        </dl>
+      </div>
+      <div class="highlight">
+        <p>468x60 is clearly the favourite banner on the web</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-9"> 
+      <!--Chart 2-->
+      <div id="piechart1" data-gchart
                      data-chartsize="x-large-chart"
                      data-charttitle="Banner-ad distribution, per country"
                      data-horizontalcharttitle="Set Horizontal Axis Title"
                      data-verticalcharttitle="Set Vertical Axis Title"
                      data-containername="piechart1"
                      data-datasource="https://docs.google.com/spreadsheets/d/1nmAM4aJlVyp5c1fK5R_ahvpy0KVfl3htEIE-lnG7Gv8/edit?usp=sharing"
-                     data-gcharttype="pie">
-                </div>
-            </div>
-            <!--Chart 2 Description-->
-             <div class="col-md-3 ">
-                <h3>Description</h3>
-              <p>Shows the sampling sizes per country</p>
-              <div class="bs-example">
-                <dl>
-                  <dt>Breakdown</dt>
-                  <dd>For the 15 countries sites' scraped, each country received equal attention. Although some countries have less info readily available.</dd>
-                  <dt>Percentages</dt>
-                  <dd>The Percentages show the relative size of the dataframe each country received</dd>
-                </dl>
-                <div class="table-responsive">
-                  <table class="table table-striped">
-                    <tr>
-                    <th>Country</th>
-                    <th>banner-ads scraped</th>
-                  </tr>
-                  <tr>
-                    <td>Australia</td>
-                    <td>1022</td>
-                  </tr>
-                  <tr>
-                    <td>Germany</td>
-                    <td>1226</td>
-                  </tr>
-                  <tr>
-                    <td>France</td>
-                    <td>1206</td>
-                  </tr>
-                  <tr>
-                    <td>Italy</td>
-                    <td>1159</td>
-                  </tr>
-                  <tr>
-                    <td>Netherlands</td>
-                    <td>950</td>
-                  </tr>
-                  <tr>
-                    <td>Turkey</td>
-                    <td>972</td>
-                  </tr>
-                  <tr>
-                    <td>UK</td>
-                    <td>1003</td>
-                  </tr>
-                  <tr>
-                    <td>US</td>
-                    <td>1229</td>
-                  </tr>
-                  <tr>
-                    <td>Spain</td>
-                    <td>1238</td>
-                  </tr>
-                  <tr>
-                    <td>Israel</td>
-                    <td>960</td>
-                  </tr>
-                  <tr>
-                    <td>Mexico</td>
-                    <td>1064</td>
-                  </tr>
-                  <tr>
-                    <td>Brazil</td>
-                    <td>1182</td>
-                  </tr>
-                  <tr>
-                    <td>Russia</td>
-                    <td>1142</td>
-                  </tr>
-                  <tr>
-                    <td>Sweden</td>
-                    <td>1278</td>
-                  </tr>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row well">
-            <div class="col-md-9">
-                <!--Chart 3-->
-                <div id="bubblechart1" data-gchart
+                     data-gcharttype="pie"> </div>
+    </div>
+    <!--Chart 2 Description-->
+    <div class="col-md-3 ">
+      <h3>Description</h3>
+      <p>Shows the sampling sizes per country</p>
+      <div class="bs-example">
+        <dl>
+          <dt>Breakdown</dt>
+          <dd>For the 15 countries sites' scraped, each country received equal attention. Although some countries have less info readily available.</dd>
+          <dt>Percentages</dt>
+          <dd>The Percentages show the relative size of the dataframe each country received</dd>
+        </dl>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <tr>
+              <th>Country</th>
+              <th>banner-ads scraped</th>
+            </tr>
+            <tr>
+              <td>Australia</td>
+              <td>1022</td>
+            </tr>
+            <tr>
+              <td>Germany</td>
+              <td>1226</td>
+            </tr>
+            <tr>
+              <td>France</td>
+              <td>1206</td>
+            </tr>
+            <tr>
+              <td>Italy</td>
+              <td>1159</td>
+            </tr>
+            <tr>
+              <td>Netherlands</td>
+              <td>950</td>
+            </tr>
+            <tr>
+              <td>Turkey</td>
+              <td>972</td>
+            </tr>
+            <tr>
+              <td>UK</td>
+              <td>1003</td>
+            </tr>
+            <tr>
+              <td>US</td>
+              <td>1229</td>
+            </tr>
+            <tr>
+              <td>Spain</td>
+              <td>1238</td>
+            </tr>
+            <tr>
+              <td>Israel</td>
+              <td>960</td>
+            </tr>
+            <tr>
+              <td>Mexico</td>
+              <td>1064</td>
+            </tr>
+            <tr>
+              <td>Brazil</td>
+              <td>1182</td>
+            </tr>
+            <tr>
+              <td>Russia</td>
+              <td>1142</td>
+            </tr>
+            <tr>
+              <td>Sweden</td>
+              <td>1278</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row well">
+    <div class="col-md-9"> 
+      <!--Chart 3-->
+      <div id="bubblechart1" data-gchart
                      data-chartsize="x-large-chart"
                      data-charttitle="Banner Advertising vs. Population"
                      data-horizontalcharttitle="Amount of banner-ads"
                      data-verticalcharttitle="Population/Banner-ads"
                      data-containername="bubblechart1"
                      data-datasource="https://docs.google.com/spreadsheet/ccc?key=0AtXDgp9m-UEHdF9fX3lidnBMTXBQODVuTnFlT3FFWlE&usp=sharing"
-                     data-gcharttype="bubble">
-                </div>
-            </div>
-             <div class="col-md-3 ">
-             <!--Chart 3 Description-->
-                <h3>Description</h3>
-              <p>Displays the quotient of population  divided by amount of banner-ads found.</p>
-              <div class="bs-example">
-                <dl>
-                  <dt>Breakdown</dt>
-                  <dd>The outlier is the USA, which shows for one thing that each banner-ad found is targeting a much larger audience, which comes as no surprise. Although it could also indicate missed oportunities in smaller niches, since the volume of people qualified to be marketed to, is so much larger.</dd>
-                  <dt>Missed Opportunity</dt>
-                  <dd>The population-size is much larger, however the amount of banner-ads and variety is not proportionately larger, showing room for additional marketing in this channel.</dd>
-                </dl>
-              </div>
-            </div>
-           </div>
-<!-- Footer
-================================================== -->
-<footer class="bs-docs-footer" role="contentinfo">
-  <div class="container">
-    <div class="bs-docs-social">
-  <ul class="bs-docs-social-buttons">
-    <li>
-      <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
-    </li>
-    <li>
-      <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe>
-    </li>
-    <li class="tweet-btn">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://taptap.mobi/research" data-count="vertical" data-via="TapTap.mobi" data-related="mdo:Media Buying Research">Tweet</a>
-    </li>
-    <li class="follow-btn">
-      <a href="https://twitter.com/jenbrannstrom" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true" data-count="vertical">Follow @jenbrannstrom</a>
-    </li>
-    
-  </ul>
+                     data-gcharttype="bubble"> </div>
+    </div>
+    <div class="col-md-3 "> 
+      <!--Chart 3 Description-->
+      <h3>Description</h3>
+      <p>Displays the quotient of population  divided by amount of banner-ads found.</p>
+      <div class="bs-example">
+        <dl>
+          <dt>Breakdown</dt>
+          <dd>The outlier is the USA, which shows for one thing that each banner-ad found is targeting a much larger audience, which comes as no surprise. Although it could also indicate missed oportunities in smaller niches, since the volume of people qualified to be marketed to, is so much larger.</dd>
+          <dt>Missed Opportunity</dt>
+          <dd>The population-size is much larger, however the amount of banner-ads and variety is not proportionately larger, showing room for additional marketing in this channel.</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <!-- ==================================================Footer================================================== -->
+  <footer class="bs-docs-footer" role="contentinfo">
+    <div class="container">
+      <div class="bs-docs-social">
+        <ul class="bs-docs-social-buttons">
+          <li>
+            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
+          </li>
+          <li>
+            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe>
+          </li>
+          <li class="tweet-btn"> <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://taptap.mobi/research" data-count="vertical" data-via="TapTap.mobi" data-related="mdo:Media Buying Research">Tweet</a> </li>
+          <li class="follow-btn"> <a href="https://twitter.com/jenbrannstrom" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true" data-count="vertical">Follow @jenbrannstrom</a> </li>
+	      <li><script src="http://platform.linkedin.com/in.js" type="text/javascript"></script><script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/jenbrannstrom" data-format="hover"></script></li>
+          <li><script src="http://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script><script type="IN/FollowCompany" data-id="5144636" data-counter="right"></script></li>
+          <li><script type="text/javascript" src="https://d389zggrogs7qo.cloudfront.net/js/button.js"></script><a href="http://bufferapp.com/add" class="buffer-add-button" data-count="vertical" data-via="jenbrannstrom" >Buffer</a></li>
+        </ul>
+      </div>
+      <p>Designed and built with all the love in the world by <a href="http://twitter.com/jenbrannstrom" target="_blank">@jenbrannstrom</a>.</p>
+      <p>Maintained by the.</p>
+      <ul class="bs-docs-footer-links muted">
+        <li>Currently v3.1.1</li>
+        <li>&middot;</li>
+        <li><a href="https://github.com/twbs/bootstrap">GitHub</a></li>
+        <li>&middot;</li>
+        <li><a href="../getting-started/#examples">Examples</a></li>
+        <li>&middot;</li>
+        <li><a href="../2.3.2/">v2.3.2 docs</a></li>
+        <li>&middot;</li>
+        <li><a href="../about/">About</a></li>
+        <li>&middot;</li>
+        <li><a href="http://expo.getbootstrap.com">Expo</a></li>
+        <li>&middot;</li>
+        <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+        <li>&middot;</li>
+        <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Issues</a></li>
+        <li>&middot;</li>
+        <li><a href="https://github.com/twbs/bootstrap/releases">Releases</a></li>
+      </ul>
+    </div>
+  </footer>
 </div>
 
-
-    <p>Designed and built with all the love in the world by <a href="http://twitter.com/jenbrannstrom" target="_blank">@jenbrannstrom</a>.</p>
-    <p>Maintained by the.</p>
-    <ul class="bs-docs-footer-links muted">
-      <li>Currently v3.1.1</li>
-      <li>&middot;</li>
-      <li><a href="https://github.com/twbs/bootstrap">GitHub</a></li>
-      <li>&middot;</li>
-      <li><a href="../getting-started/#examples">Examples</a></li>
-      <li>&middot;</li>
-      <li><a href="../2.3.2/">v2.3.2 docs</a></li>
-      <li>&middot;</li>
-      <li><a href="../about/">About</a></li>
-      <li>&middot;</li>
-      <li><a href="http://expo.getbootstrap.com">Expo</a></li>
-      <li>&middot;</li>
-      <li><a href="http://blog.getbootstrap.com">Blog</a></li>
-      <li>&middot;</li>
-      <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Issues</a></li>
-      <li>&middot;</li>
-      <li><a href="https://github.com/twbs/bootstrap/releases">Releases</a></li>
-    </ul>
-  </div>
-</footer>
-
-
 <!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-    <!--<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
-    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
-    <script src="scripts/plugin/smartResize.js"></script>
-    <script src="scripts/plugin/chartsPlugin.js"></script>
-    <script>
+================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<!--<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>--> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script> 
+<script src="http://www.google.com/jsapi" type="text/javascript"></script> 
+<script src="scripts/plugin/smartResize.js"></script> 
+<script src="scripts/plugin/chartsPlugin.js"></script> 
+<script>
         $(document).chartsPlugin({
             chartsFont: 'Open Sans',
             colors: ['#428bca','#d9534f', '#5bc0de', '#f0ad4e', '#5cb85c']
         });
-    </script>
-<!-- Twitter -->
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </script> 
+<!-- Twitter --> 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </body>
 </html>
