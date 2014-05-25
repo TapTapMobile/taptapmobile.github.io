@@ -16,22 +16,49 @@
     <li><a href="../charts/topics-country.html">Country Profiles</a></li>
     <li><a href="#">Niche Profiles</a></li>
   </ul>
-  
-  <!-- Header
-================================================== --> 
-  <!-- Placed below -->
+  <!-- Header ================================================== -->
   <div class="page-header">
     <h1>The <abbr title="Advertising that is designed to generate a direct response from consumers, where each consumer's response can be measured, and attributed to individual advertisements">Direct-Response</abbr> Landscape on Google AdWords GDN</h1>
   </div>
+  <!-- Body copy ================================================== -->
   
-  <!-- Body copy
-================================================== --> 
-  <!-- Placed below -->
-  <p class="lead">a survey of 16819 banner-ads, from 42,300 websites and apps, over 365 days</p>
-  
-  <!-- Charts
-================================================== --> 
-  <!-- Placed below -->
+  <div class="row">
+    <div class="text-center">
+      <p class="lead">a survey of 16,819 banner-ads, from 42,300 websites and apps, over 365 days</p>
+    </div>
+    <div class="col-md-6 col-md-offset-3">
+      <p>Media Buys can be costly, so it's best to know the lay-of-the-land before laying down your cash. These next few pages are an attempt at categorising the digital advertising space.</p>
+      The collected data was scraped from 42,300 websites and apps, over 365 days, as part of my <a href="https://www.udacity.com/course/ud651" target= _blank> Exploratory Data Science course by Udacity</a>.
+      <p>I sliced & diced the data with <a href="http://r-project.org/" target= _blank>R</a>, <a href="http://www.rstudio.com/" target=_blank>RStudio</a> and <a href="http://www.statace.com" target= _blank>StatAce</a>.</p>
+    </div>
+  </div>
+  <div class="row">
+    <h2 class="text-center">Intro</h2>
+    <div class="text-center">
+      <p>Here are some examples of what was collected (times 16,819, from 42,300 in <abbr title="Australia, Canada, Germany, France, Italy, Netherlands, Turkey, UK, US, Spain, Israel, Mexico, Brazil, Russia, Sweden">15 countries</abbr>):</p>
+    </div>
+    <img src="../img/ex_160x600.jpg" class="img-responsive img-thumbnail" alt="Responsive image"> <img src="../img/ex_468x60.jpg" class="img-responsive img-thumbnail" alt="Responsive image"> <img src="../img/ex_728x90.jpg" class="img-responsive img-thumbnail" alt="Responsive image"> <img src="../img/ex_300x250.jpg" class="img-responsive img-thumbnail" alt="Responsive image"> </div>
+  <div class="row">
+    <div class="text-center">
+      <p class="lead">Direct-Response, or not direct-response</p>
+    </div>
+    <div class="col-md-6">
+      <p>Coming from a purely direct-response, direct-mail background (does anyone remember Fax-blasts?), over the years I've developed my own internal checklist to weed out the brands. Big Brands have "burn budgets" and when they 'turn on the firehose it is very easy to get misled into thinking a particular type of ad should be replicated. Or that there is something 'new' that now works in advertising, when in actual fact it doesn't work.
+        So what are the criteria by which I decide whether or not an ad is "direct-response"?</p>
+    </div>
+    <div class="col-md-6">
+      <p>So what are the criteria by which I decide whether or not an ad is "direct-response"?</p>
+      <dl>
+        <dt>is it a Big Brand? </dt>
+        <dd>This is quite easy to judge. Is it Coca-Cola, GM, Pfizer, ...? Chances are there is no monetization strategy, and they are going for the "branding effect".</dd>
+        <dt>is it a 'branding type' banner, ie: no <abbr title="Call-to-Action">CTA</abbr>, no real monetization?</dt>
+        <dd>This can be quite a lot more subjective, and relies on my experience/idiosyncracies as a marketer. Let me know if you disagree with any of my choices.</dd>
+        <dt>is it a Charity?</dt>
+        <dd>Charities can get <a href="https://www.google.com/grants/domains.html target=_blank">$10,000/m free AdWords advertising</a> anyway, and usually have very poorly crafted ads. Although there are some remarkably workable campaigns off-line, in the online world however, I didn't see any in the scraped results.</dd>
+      </dl>
+    </div>
+  </div>
+  <!-- Charts ================================================== -->
   <div class="row highlight well">
     <div class="col-md-9"> 
       <!--Chart 1-->
@@ -72,7 +99,7 @@
       </div>
     </div>
   </div>
-  <div class="row">
+  <div class="row"> <a id="countries"></a>
     <div class="col-md-9"> 
       <!--Chart 2-->
       <div id="piechart1" data-gchart
@@ -86,8 +113,8 @@
     </div>
     <!--Chart 2 Description-->
     <div class="col-md-3 ">
-      <h3>Description</h3>
-      <p>Shows the sampling sizes per country</p>
+      <h3>Countries</h3>
+      <p>This Pie Chart shows the sampling sizes per country</p>
       <div class="bs-example">
         <dl>
           <dt>Breakdown</dt>
@@ -176,8 +203,8 @@
     </div>
     <div class="col-md-3 "> 
       <!--Chart 3 Description-->
-      <h3>Description</h3>
-      <p>Displays the quotient of population  divided by amount of banner-ads found.</p>
+      <h3>Ads per Capita</h3>
+      <p>Displays the quotient of population divided by amount of banner-ads found.</p>
       <div class="bs-example">
         <dl>
           <dt>Breakdown</dt>
@@ -188,52 +215,49 @@
       </div>
     </div>
   </div>
-  <!-- ==================================================Footer================================================== -->
-  <footer class="bs-docs-footer" role="contentinfo">
-    <div class="container">
-      <div class="bs-docs-social">
-        <ul class="bs-docs-social-buttons">
-          <li>
-            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
-          </li>
-          <li>
-            <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe>
-          </li>
-          <li class="tweet-btn"> <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://taptap.mobi/research" data-count="vertical" data-via="TapTap.mobi" data-related="mdo:Media Buying Research">Tweet</a> </li>
-          <li class="follow-btn"> <a href="https://twitter.com/jenbrannstrom" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true" data-count="vertical">Follow @jenbrannstrom</a> </li>
-	      <li><script src="http://platform.linkedin.com/in.js" type="text/javascript"></script><script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/jenbrannstrom" data-format="hover"></script></li>
-          <li><script src="http://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script><script type="IN/FollowCompany" data-id="5144636" data-counter="right"></script></li>
-          <li><script type="text/javascript" src="https://d389zggrogs7qo.cloudfront.net/js/button.js"></script><a href="http://bufferapp.com/add" class="buffer-add-button" data-count="vertical" data-via="jenbrannstrom" >Buffer</a></li>
-        </ul>
-      </div>
-      <p>Designed and built with all the love in the world by <a href="http://twitter.com/jenbrannstrom" target="_blank">@jenbrannstrom</a>.</p>
-      <p>Maintained by the.</p>
-      <ul class="bs-docs-footer-links muted">
-        <li>Currently v3.1.1</li>
-        <li>&middot;</li>
-        <li><a href="https://github.com/twbs/bootstrap">GitHub</a></li>
-        <li>&middot;</li>
-        <li><a href="../getting-started/#examples">Examples</a></li>
-        <li>&middot;</li>
-        <li><a href="../2.3.2/">v2.3.2 docs</a></li>
-        <li>&middot;</li>
-        <li><a href="../about/">About</a></li>
-        <li>&middot;</li>
-        <li><a href="http://expo.getbootstrap.com">Expo</a></li>
-        <li>&middot;</li>
-        <li><a href="http://blog.getbootstrap.com">Blog</a></li>
-        <li>&middot;</li>
-        <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Issues</a></li>
-        <li>&middot;</li>
-        <li><a href="https://github.com/twbs/bootstrap/releases">Releases</a></li>
+</div>
+<!-- Footer================================================== -->
+<footer class="bs-docs-footer" role="contentinfo">
+  <div class="container">
+    <div class="bs-docs-social">
+      <ul class="bs-docs-social-buttons">
+        <li>
+          <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=watch&amp;count=true" width="100" height="20" title="Star on GitHub"></iframe>
+        </li>
+        <li>
+          <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twbs&amp;repo=bootstrap&amp;type=fork&amp;count=true" width="102" height="20" title="Fork on GitHub"></iframe>
+        </li>
+        <li class="tweet-btn"> <a href="https://twitter.com/share" class="twitter-share-button" data-link-color="#0069D6" data-url="http://taptap.mobi/research" data-count="vertical" data-via="TapTap.mobi" data-related="mdo:Media Buying Research">Tweet</a> </li>
+        <li class="follow-btn"> <a href="https://twitter.com/jenbrannstrom" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true" data-count="vertical">Follow @jenbrannstrom</a> </li>
+        <li><script src="http://platform.linkedin.com/in.js" type="text/javascript"></script><script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/jenbrannstrom" data-format="hover"></script></li>
+        <li><script src="http://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script><script type="IN/FollowCompany" data-id="5144636" data-counter="top"></script></li>
+        <li><script type="text/javascript" src="https://d389zggrogs7qo.cloudfront.net/js/button.js"></script><a href="http://bufferapp.com/add" class="buffer-add-button" data-count="vertical" data-via="jenbrannstrom" >Buffer</a></li>
       </ul>
     </div>
-  </footer>
-</div>
-
-<!-- Bootstrap core JavaScript
-================================================== --> 
-<!-- Placed at the end of the document so the pages load faster --> 
+    <p>Designed and built with all the love in the world by <a href="http://twitter.com/jenbrannstrom" target="_blank">@jenbrannstrom</a>.</p>
+    <p>Hand-coded using <a href="http://getbootstrap.com">Bootstrap</a></p>
+    <ul class="bs-docs-footer-links muted">
+      <li>Currently v3.1.1</li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/twbs/bootstrap">GitHub</a></li>
+      <li>&middot;</li>
+      <li><a href="../getting-started/#examples">Examples</a></li>
+      <li>&middot;</li>
+      <li><a href="../2.3.2/">v2.3.2 docs</a></li>
+      <li>&middot;</li>
+      <li><a href="../about/">About</a></li>
+      <li>&middot;</li>
+      <li><a href="http://expo.getbootstrap.com">Expo</a></li>
+      <li>&middot;</li>
+      <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Issues</a></li>
+      <li>&middot;</li>
+      <li><a href="https://github.com/twbs/bootstrap/releases">Releases</a></li>
+    </ul>
+  </div>
+</footer>
+<!-- Bootstrap core JavaScript ================================================== --> 
 <!--<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>--> 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
 <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script> 
@@ -241,11 +265,11 @@
 <script src="scripts/plugin/smartResize.js"></script> 
 <script src="scripts/plugin/chartsPlugin.js"></script> 
 <script>
-        $(document).chartsPlugin({
-            chartsFont: 'Open Sans',
-            colors: ['#428bca','#d9534f', '#5bc0de', '#f0ad4e', '#5cb85c']
-        });
-    </script> 
+	$(document).chartsPlugin({
+		chartsFont: 'Open Sans',
+		colors: ['#428bca','#d9534f', '#5bc0de', '#f0ad4e', '#5cb85c']
+	});
+</script> 
 <!-- Twitter --> 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </body>
