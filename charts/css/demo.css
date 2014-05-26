@@ -23,12 +23,12 @@ body {
 
 a {
 	text-decoration: none;
-	color: #ed8151;
+	color: #428bca;
 	outline: none;
 }
 
 a:hover, a:focus {
-	color: #e86a32;
+	color: #275379;
 	outline: none;
 }
 
@@ -172,12 +172,12 @@ button {
 
 button {
 	font-size: 75%;
-	background: #ed8151;
+	background: #428bca;
 }
 
 button:hover,
 button:active {
-	background: #e86a32;
+	background: #3b7db5;
 }
 
 .related {
