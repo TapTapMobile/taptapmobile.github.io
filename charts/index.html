@@ -1,65 +1,374 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title>Perspective Page View Navigation</title>
-		<meta name="description" content="Perspective Page View Navigation: Transforms the page in 3D to reveal a menu" />
-		<meta name="keywords" content="3d page, menu, navigation, mobile, perspective, css transform, web development, web design" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<!-- csstransforms3d-shiv-cssclasses-prefixed-teststyles-testprop-testallprops-prefixes-domprefixes-load --> 
-		<script src="js/modernizr.custom.25376.js"></script>
-	</head>
-	<body>
-		<div id="perspective" class="perspective effect-moveleft">
-			<div class="container">
-				<div class="wrapper"><!-- wrapper needed for scroll -->
-					<!-- Top Navigation -->
-					<header class="codrops-header">
-						<h1>The <abbr title="Advertising that is designed to generate a direct response from consumers, where each consumer's response can be measured, and attributed to individual advertisements">Direct-Response</abbr> Landscape on Google AdWords GDN <span>without the BS</span></h1>	
-					</header>
-					<div class="main clearfix">
-						<div class="column">
-							<p><button id="showMenu">Reveal The Secrets</button></p>
-							<p>Careful now: Clicking on this button may give you better Media-Buys</p>
-						</div>
-						<div class="column">
-							<p>Media-Buying errors are costly. So I did a data-analysis, graphing 16,819 banner-ads, from 42,311 websites and apps, over a period of 365 days</p>
-							
-						</div>
-						<div class="related">
-							<p>This Data Analysis was made possible by:</p>
-							<p><a href="http://r-project.org/">R</a></p>
-						</div>
-					</div><!-- /main -->
-				</div><!-- wrapper -->
-			</div><!-- /container -->
-			<nav class="outer-nav right vertical">
-                <a href="dataframe.html" class="icon-home">DataFrame: intro</a>
-				<a href="#" class="icon-news">Australia</a>
-				<a href="#" class="icon-news">Brazil</a>
-				<a href="canada.html" class="icon-news">Canada</a>
-				<a href="#" class="icon-news">France</a>
-				<a href="#" class="icon-news">Germany</a>
-				<a href="#" class="icon-news">Israel</a>
-				<a href="#" class="icon-news">Italy</a>
-				<a href="#" class="icon-news">Mexico</a>
-				<a href="#" class="icon-news">News</a>
-				<a href="#" class="icon-news">Netherlands</a>
-				<a href="#" class="icon-news">Russia</a>
-				<a href="#" class="icon-news">Spain</a>
-				<a href="#" class="icon-news">Sweden</a>
-				<a href="#" class="icon-news">Turkey</a>
-				<a href="#" class="icon-news">UK</a>
-				<a href="#" class="icon-news">US</a>
-			</nav>
-		</div><!-- /perspective -->
-		<script src="js/classie.js"></script>
-		<script src="js/menu.js"></script>
-	</body>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ad delivery Charts</title>
+<link href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="style/demoTheme.css" rel="stylesheet" />
+<link href="style/chartSizes.css" rel="stylesheet" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi, width=device-width" />
+</head>
+<body>
+<div class="container"> 
+  <!--Nav-->
+  <ul class="nav nav-pills">
+    <li class="active"><a href="../charts/index.html">RnD Home</a></li>
+    <li><a href="../charts/topics-country.html" id="countryp" role="button" data-toggle="dropdown">Country Profiles <b class="caret"></b></a>
+        <ul id="menucountry" class="dropdown-menu" role="menu" aria-labelledby="countryp">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Australia</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Brazil</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="../charts/canada.html">Canada</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">France</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Germany</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Israel</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Italy</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mexico</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Netherlands</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Russia</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Spain</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Turkey</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">UK</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">US</a></li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+        </ul>
+    </li>
+    <li><a href="#" id="nprofiles" role="button" data-toggle="dropdown">Niche Profiles <b class="caret"></b></a>
+	    <ul id="menunprofiles" class="dropdown-menu" role="menu" aria-labelledby="nprofiles">
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Apparel</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Apps & DL's</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Biz-Op</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Dating</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Diet</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Edu</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Gambling</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Games</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Health & Welness</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Vouchers</a></li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+        </ul>
+    </li>
+  </ul>
+  <!-- Header ================================================== -->
+  <div class="page-header">
+    <h1>The <abbr title="Advertising that is designed to generate a direct response from consumers, where each consumer's response can be measured, and attributed to individual advertisements">Direct-Response</abbr> Landscape on Google AdWords GDN</h1>
+  </div>
+  <!-- Body copy ================================================== -->
+  
+  <div class="row">
+    <div class="text-center">
+      <p class="lead">a survey of 16,819 banner-ads, from 42,300 websites and apps, over 365 days</p>
+    </div>
+    <div class="col-md-6 col-md-offset-3">
+      <p>Media Buys can be costly, so it's best to know the lay-of-the-land before laying down your cash. These next few pages are an attempt at categorising the digital advertising space.</p>
+      The collected data was scraped from 42,300 websites and apps, over 365 days, as part of my <a href="https://www.udacity.com/course/ud651" target= _blank> Exploratory Data Science course by Udacity</a>.
+      <p>I sliced & diced the data with <a href="http://r-project.org/" target= _blank>R</a>, <a href="http://www.rstudio.com/" target=_blank>RStudio</a> and <a href="http://www.statace.com" target= _blank>StatAce</a>.</p>
+    </div>
+  </div>
+  <div class="row">
+    <h2 class="text-center">Examples</h2>
+    <div class="text-center">
+      <p>Here are some examples of what was collected (times 16,819, from 42,300 in <div data-toggle="tooltip" data-placement="left" title="Australia, Canada, Germany, France, Italy, Netherlands, Turkey, UK, US, Spain, Israel, Mexico, Brazil, Russia, Sweden">15 countries</title></div>):</p>
+    </div>
+    <div class="row">
+    <div class=col-md-12>
+        <img src="./img/160x600.gif" alt="160x600px banner ad" class="img-responsive img-thumbnail"></div>
+    <div class=col-md-12>
+        <img src="./img/468x60.gif" class="img-responsive img-thumbnail"> </div>
+    <div class=col-md-12>
+        <img src="./img/728x90.jpg" class="img-responsive img-thumbnail"> </div>
+    <div class=col-md-12>
+        <img src="./img/300x250.jpg" class="img-responsive img-thumbnail"></div>
+    </div>
+  <div class="row">
+    <div class="text-center">
+      <p class="lead">Direct-Response, or not direct-response</p>
+    </div>
+    <div class="col-md-6">
+      <p>Coming from a purely direct-response, direct-mail background (does anyone remember Fax-blasts?), over the years I've developed my own internal checklist to weed out the brands. Big Brands have "burn budgets" and when they 'turn on the firehose it is very easy to get misled into thinking a particular type of ad should be replicated. Or that there is something 'new' that now works in advertising, when in actual fact it doesn't work.
+        So what are the criteria by which I decide whether or not an ad is "direct-response"?</p>
+    </div>
+    <div class="col-md-6">
+      <p>So what are the criteria by which I decide whether or not an ad is "direct-response"?</p>
+      <dl>
+        <dt>is it a Big Brand? </dt>
+        <dd>This is quite easy to judge. Is it Coca-Cola, GM, Pfizer, ...? Chances are there is no monetization strategy, and they are going for the "branding effect".</dd>
+        <dt>is it a 'branding type' banner, ie: no <abbr title="Call-to-Action">CTA</abbr>, no real monetization?</dt>
+        <dd>This can be quite a lot more subjective, and relies on my experience/idiosyncracies as a marketer. Let me know if you disagree with any of my choices.</dd>
+        <dt>is it a Charity?</dt>
+        <dd>Charities can get <a href="https://www.google.com/grants/domains.html target=_blank">$10,000/m free AdWords advertising</a> anyway, and usually have very poorly crafted ads. Although there are some remarkably workable campaigns off-line, in the online world however, I didn't see any in the scraped results.</dd>
+      </dl>
+    </div>
+  </div>
+  <!-- Charts ================================================== -->
+  <div class="row highlight well">
+    <div class="col-md-9"> 
+      <!--Chart 1-->
+      <div id="barchart1" data-gchart
+                     data-chartSize="x-large-chart"
+                     data-chartTitle="Banner sizes"
+                     data-horizontalChartTitle="Banner Sizes"
+                     data-verticalChartTitle="Amount of Banners"
+                     data-containerName="barchart1"
+                     data-dataSource="https://docs.google.com/spreadsheet/ccc?key=0AtXDgp9m-UEHdEJ0MF9tMjlVaUNraUFBT19taGNERGc"
+                     data-gChartType="bar"> </div>
+    </div>
+    <!--Chart 1 Description-->
+    <div class="col-md-3">
+      <h3>Description</h3>
+      <p>This graph shows which banner ad size is more popular, per country.</p>
+      <div class="bs-example">
+        <dl>
+          <dt>Banner sizes scraped (width/height):</dt>
+          <dd>
+            <button type="button" class="btn btn-info btn-sm">300w 250h</button>
+          <dd>
+            <button type="button" class="btn btn-info btn-sm">728w 90h</button>
+          <dd>
+            <button type="button" class="btn btn-info btn-sm">468w 60h</button>
+          <dd>
+            <button type="button" class="btn btn-info btn-sm">160w 600h</button>
+          </dd>
+          <dt>Dataframe:</dt>
+          <dd>A total of 16824 banners were scraped, in 15 countries.</dd>
+          <dd>The Websites scraped are relevant to each country, although scraping errors are bound to occur. See notes below.</dd>
+          <dt>Time Frame</dt>
+          <dd>365 days prior to 17 May 2014</dd>
+        </dl>
+      </div>
+      <div class="highlight">
+        <p>468x60 is clearly the most prlific banner on the web</p>
+      </div>
+    </div>
+  </div>
+  <div class="row"> <a id="countries"></a>
+    <div class="col-md-9"> 
+      <!--Chart 2-->
+      <div id="piechart1" data-gchart
+                     data-chartsize="x-large-chart"
+                     data-charttitle="Banner-ad distribution, per country"
+                     data-horizontalcharttitle="Set Horizontal Axis Title"
+                     data-verticalcharttitle="Set Vertical Axis Title"
+                     data-containername="piechart1"
+                     data-datasource="https://docs.google.com/spreadsheets/d/1nmAM4aJlVyp5c1fK5R_ahvpy0KVfl3htEIE-lnG7Gv8/edit?usp=sharing"
+                     data-gcharttype="pie"> </div>
+    </div>
+    <!--Chart 2 Description-->
+    <div class="col-md-3 ">
+      <h3>Countries</h3>
+      <p>This Pie Chart shows the sampling sizes per country</p>
+      <div class="bs-example">
+        <dl>
+          <dt>Breakdown</dt>
+          <dd>For the 15 countries sites' scraped, each country received equal attention. Although some countries have less info readily available.</dd>
+          <dt>Percentages</dt>
+          <dd>The Percentages show the relative size of the dataframe each country received</dd>
+        </dl>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <tr>
+              <th>Country</th>
+              <th>banner-ads scraped</th>
+            </tr>
+            <tr>
+              <td>Australia</td>
+              <td>1022</td>
+            </tr>
+            <tr>
+              <td>Germany</td>
+              <td>1226</td>
+            </tr>
+            <tr>
+              <td>France</td>
+              <td>1206</td>
+            </tr>
+            <tr>
+              <td>Italy</td>
+              <td>1159</td>
+            </tr>
+            <tr>
+              <td>Netherlands</td>
+              <td>950</td>
+            </tr>
+            <tr>
+              <td>Turkey</td>
+              <td>972</td>
+            </tr>
+            <tr>
+              <td>UK</td>
+              <td>1003</td>
+            </tr>
+            <tr>
+              <td>US</td>
+              <td>1229</td>
+            </tr>
+            <tr>
+              <td>Spain</td>
+              <td>1238</td>
+            </tr>
+            <tr>
+              <td>Israel</td>
+              <td>960</td>
+            </tr>
+            <tr>
+              <td>Mexico</td>
+              <td>1064</td>
+            </tr>
+            <tr>
+              <td>Brazil</td>
+              <td>1182</td>
+            </tr>
+            <tr>
+              <td>Russia</td>
+              <td>1142</td>
+            </tr>
+            <tr>
+              <td>Sweden</td>
+              <td>1278</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row well">
+    <div class="col-md-9"> 
+      <!--Chart 3-->
+      <div id="bubblechart1" data-gchart
+                     data-chartsize="x-large-chart"
+                     data-charttitle="Banner Advertising vs. Population"
+                     data-horizontalcharttitle="Amount of banner-ads"
+                     data-verticalcharttitle="Population/Banner-ads"
+                     data-containername="bubblechart1"
+                     data-datasource="https://docs.google.com/spreadsheet/ccc?key=0AtXDgp9m-UEHdF9fX3lidnBMTXBQODVuTnFlT3FFWlE&usp=sharing"
+                     data-gcharttype="bubble"> </div>
+    </div>
+    <div class="col-md-3 "> 
+      <!--Chart 3 Description-->
+      <h3>Ads per Capita</h3>
+      <p>Displays the quotient of population divided by amount of banner-ads found.</p>
+      <div class="bs-example">
+        <dl>
+          <dt>Breakdown</dt>
+          <dd>The outlier is the USA, which shows for one thing that each banner-ad found is targeting a much larger audience, which comes as no surprise. Although it could also indicate missed oportunities in smaller niches, since the volume of people qualified to be marketed to, is so much larger.</dd>
+          <dt>Missed Opportunity</dt>
+          <dd>The population-size is much larger, however the amount of banner-ads and variety is not proportionately larger, showing room for additional marketing in this channel.</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+	<div class="col-sm-9">
+		<div class="carousel slide" data-ride="carousel">
+		  <ol class="carousel-indicators"><!-- Add Image Nav toggle for Slider-->
+			<li data-target="#carousel-example-captions" data-slide-to="0" class=""></li>
+			<li data-target="#carousel-example-captions" data-slide-to="1" class="active"></li>
+			<li data-target="#carousel-example-captions" data-slide-to="2" class=""></li>
+		  </ol>
+		  <div class="carousel-inner">
+			<div class="item"><!-- Add Image Item Here  -->
+			  <img data-src="holder.js/900x500/auto/#777:#777" alt="900x500" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNzc3O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+OTAweDUwMDwvdGV4dD48L3N2Zz4=">
+			  <div class="carousel-caption">
+				<h3>First slide label</h3>
+				<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+			  </div>
+			</div>
+			<div class="item active">
+			  <img data-src="holder.js/900x500/auto/#666:#666" alt="900x500" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzY2NiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNjY2O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+OTAweDUwMDwvdGV4dD48L3N2Zz4=">
+			  <div class="carousel-caption">
+				<h3>Second slide label</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			  </div>
+			</div>
+			<div class="item">
+			  <img data-src="holder.js/900x500/auto/#555:#5555" alt="900x500" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzU1NSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNTU1NTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZTo1NnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjkwMHg1MDA8L3RleHQ+PC9zdmc+">
+			  <div class="carousel-caption">
+				<h3>Third slide label</h3>
+				<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+			  </div>
+			</div>
+		  </div>
+		  <a class="left carousel-control" href="#carousel-example-captions" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example-captions" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		  </a>
+		</div>
+	</div>
+  </div>
+  <div class="row"><!-- Add Images Here - Replace data in src attribute to add images. Modify the height and width in style to adjust width. This is responsive.  -->
+	<div class="col-sm-12">
+		<img data-src="holder.js/140x140" class="img-rounded" alt="140x140" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" style="width: 140px; height: 140px;">
+		<img data-src="holder.js/140x140" class="img-rounded" alt="140x140" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" style="width: 140px; height: 140px;">
+		<img data-src="holder.js/140x140" class="img-rounded" alt="140x140" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" style="width: 140px; height: 140px;">
+		<img data-src="holder.js/140x140" class="img-rounded" alt="140x140" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" style="width: 140px; height: 140px;">
+	</div>
+  </div>
+  <div class="row">
+        <div class="col-sm-12">
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                var disqus_shortname = 'taptapmobi'; // required: replace example with your forum shortname
+        
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+    </div>
+</div>
+<!-- Footer================================================== -->
+<footer class="bs-docs-footer" role="contentinfo">
+  <div class="container">
+    <div class="bs-docs-social">
+      <ul class="bs-docs-social-buttons">
+        <li>
+          <a href="javascript:document.getElementsByTagName('body')[0].appendChild(document.createElement('script')).setAttribute('src','//geekli.st/javascript/bookmarklet/bookmarklet.js')"><img src="//geekli.st/images/assets/GeekIt_wFace.png"></a>
+        </li>
+        <li class="tweet-btn"> <a href="https://twitter.com/share" class="twitter-share-button" data-link-color="#0069D6" data-url="http://taptap.mobi/research" data-count="vertical" data-via="TapTap.mobi" data-related="mdo:Media Buying Research">Tweet</a> </li>
+        <li class="follow-btn"> <a href="https://twitter.com/jenbrannstrom" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true" data-count="vertical">Follow @jenbrannstrom</a> </li>
+        <li><script src="http://platform.linkedin.com/in.js" type="text/javascript"></script><script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/jenbrannstrom" data-format="hover"></script></li>
+        <li><script src="http://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script><script type="IN/FollowCompany" data-id="5144636" data-counter="top"></script></li>
+        <li><script type="text/javascript" src="https://d389zggrogs7qo.cloudfront.net/js/button.js"></script><a href="http://bufferapp.com/add" class="buffer-add-button" data-count="vertical" data-via="jenbrannstrom" >Buffer</a></li>
+      </ul>
+    </div>
+    <p>Designed and built with all the love in the world by <a href="http://twitter.com/jenbrannstrom" target="_blank">@jenbrannstrom</a>.</p>
+    <p>cobbled together using <a href="http://getbootstrap.com">Bootstrap</a></p>
+    <ul class="bs-docs-footer-links muted">
+      <li>Thanks go to:</li>
+      <li>&middot;</li>
+      <li><a href="https://statce.com">StatAce</a></li>
+      <li>&middot;</li>
+      <li><a href="http://r-project.cra,org">R</a></li>
+      <li>&middot;</li>
+      <li><a href="https://www.datacamp.com">DataCamp</a></li>
+      <li>&middot;</li>
+      <li><a href="https://www.udacity.com">Udacity</a></li>
+    </ul>
+  </div>
+</footer>
+<!-- Bootstrap core JavaScript ================================================== --> 
+<!--<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>--> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script> 
+<script src="http://www.google.com/jsapi" type="text/javascript"></script> 
+<script src="scripts/plugin/smartResize.js"></script> 
+<script src="scripts/plugin/chartsPlugin.js"></script> 
+<script>
+	$(document).chartsPlugin({
+		chartsFont: 'Open Sans',
+		colors: ['#428bca','#d9534f', '#5bc0de', '#f0ad4e', '#5cb85c']
+	});
+</script> 
+<!-- Twitter --> 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</body>
 </html>
