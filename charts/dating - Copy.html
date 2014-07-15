@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>UK Dating-AdWords</title>
+<link href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="style/demoTheme.css" rel="stylesheet" />
+<link href="style/chartSizes.css" rel="stylesheet" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi, width=device-width" />
+</head>
+<body>
+<div class="container"> 
+  <!-- Static navbar -->
+	<div class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="http://taptap.mobi">TapTap.mobi</a>
+		  </div>
+		  <div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+			  <li class="active"><a href="../charts/index.html">Charts Home</a></li>
+			  <li class="dropdown">
+			    <a href="../charts/topics-country.html" id="countryp" class="dropdown-toggle" data-toggle="dropdown">Country Profiles <b class="caret"></b></a>
+				<ul id="menucountry" class="dropdown-menu" role="menu" aria-labelledby="countryp">
+					<li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Australia</a></li>
+					<li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Brazil</a></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1" href="../charts/canada.html">Canada</a></li>
+					<li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">France</a></li>
+					<li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Germany</a></li>
+					<li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Israel</a></li>
+					<li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Italy</a></li>
+					<li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Mexico</a></li>
+					<li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Netherlands</a></li>
+					<li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Russia</a></li>
+					<li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Spain</a></li>
+					<li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Turkey</a></li>
+					<li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">UK</a></li>
+					<li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">US</a></li>
+				</ul>
+			  </li>
+			  <li>
+				<a href="#" id="nprofiles" class="dropdown-toggle" data-toggle="dropdown">Niche Profiles <b class="caret"></b></a>
+				<ul id="menunprofiles" class="dropdown-menu" role="menu" aria-labelledby="nprofiles">
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Apparel</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Apps & DL's</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Biz-Op</a></li>
+				  <li role="presentation"><a role="menuitem" tabindex="-1" href="../charts/dating.html">Dating</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Diet</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Edu</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Gambling</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Games</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Health & Welness</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Vouchers</a></li>
+				</ul>
+			  </li>
+			  <li>
+				<a href="#" id="networks" class="dropdown-toggle" data-toggle="dropdown">Networks <b class="caret"></b></a>
+				<ul id="menunetworks" class="dropdown-menu" role="menu" aria-labelledby="networks">
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Google Adwords Display Network</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">247 Real Media</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">PulsePoint</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">ValueClick</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Tribal Fusion</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Blue Lithium</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">BuySellAds</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Rubicon Project</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">AdBrite</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Burst Media</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Advertising.com / AOL</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Genome</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Matomy Media</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Undertone Ads</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Specific Media</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Harren Media</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Casale Media</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Glam Media</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">CPX Interactive</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Invite Media</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">SiteScout</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">AdForm</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Turn</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">PointRoll</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">BlogAds</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">MediaMind</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Right Media / Yahoo</a></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">OpenX</a></li>
+				  <li role="presentation" class="divider"></li>
+				  <li class="disabled" role="presentation"><a role="menuitem" tabindex="-1" href="#">Other/Unknown</a></li>
+				</ul>
+			  </li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+			  <li><a href="http://eepurl.com/VX9LH"><i class="glyphicon glyphicon-envelope"></i> Get New Reports emailed </a></li>
+			</ul>
+		  </div><!--/.nav-collapse -->
+		</div><!--/.container-fluid -->
+	</div>
+<!-- Header ================================================== -->
+<!-- Placed below -->
+      <div class="page-header">
+      <h1>The AdWords Landscape for UK Dating</h1>
+      <h6>by Jen Brannstrom</h6>
+      </div>
+      
+<!-- Body copy
+================================================== -->
+<p class="lead">a survey of 16,819 banner-ads, from 42,300 websites and apps, over 365 days</p>
+
+<!-- Charts
+================================================== -->
+        <div class="row highlight well">
+            
+                <!--Chart 2 Description-->
+    <a name="countries"></a>
+    <div class="col-md-8 ">
+      <h3>Shocking News: UK dating scene explodes!</h3>
+       <div class="bs-example">
+        <dl>
+          <dt>Shocking!</dt>
+          <dd>The UK is much more actively looking for dates on Google, than their US-counterparts. Just look at the list of advertisers below that have been running for a full 365 days.</dd>
+          <dt>Remember: this is AdWords/Desktop only</dt>
+          <dd>US Dating is huge, but apparently not so on AdWords. Perhaps the US Media Buyers have found more appropriate Networks or are going Direct.</dd>
+          <dd>Notwithstanding, proportionately this reveals a lot about the UK's "singles-and-looking" market.</dd>
+          <dd>Feast your eyes on the media-buying revelations below...</dd>
+          
+        </dl>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <tr>
+              <th>US</th>
+              <th>UK</th>
+              <th>RU</th>
+            </tr>
+            <tr>
+              <td>arabmatchmaking.com</td>
+              <td>arabmatchmaking.com</td>
+              <td>flirchi.ru</td>
+            </tr>
+            <tr>
+              <td>charmingdate.com</td>
+              <td>charmingdate.com</td>
+              <td>partner.edarling.ru</td>
+            </tr>
+            <tr>
+              <td>chinese-lady.com</td>
+              <td>chinese-lady.com</td>
+            </tr>
+            <tr>
+              <td>chnlove.asia</td>
+              <td>chnlove.asia</td>
+            </tr>
+            <tr>
+              <td>christianmingle.com</td>
+              <td>christianmingle.com</td>
+            </tr>
+            <tr>
+              <td>filipinocupid.com</td>
+              <td>filipinocupid.com</td>
+            </tr>
+            <tr>
+              <td>fitness-singles.com</td>
+              <td>fitness-singles.com</td>
+            </tr>
+            <tr>
+              <td>idateasia.com</td>
+              <td>idateasia.com</td>
+            </tr>
+            <tr>
+              <td>thaimatches.com</td>
+              <td>thaimatches.com</td>
+            </tr>
+            <tr>
+              <td>zoosk.com</td>
+              <td>zoosk.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>afrointroductions.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>arablounge.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>asian.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>asianbeauties.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>asianmatchonline.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>chineselovelinks.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>chinesewomendate.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>cupid.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>dating-sites-compared.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>eharmony.co.uk</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>isingles.co.uk</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>islamicmarriage.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>maturedatinguk.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>muslima.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>muslims4marriage.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>shaadi.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>thailovelinks.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>uk.match.com</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>vegandatinguk.com</td>
+            </tr>
+
+          </table>
+        </div>
+      </div>
+    </div>
+
+            <!--Chart 1 Description-->
+            <div class="col-md-4">
+                <h3>Dating Quant. </h3>
+              <p>The quantity of banner-ads per Country, 365 days</p>
+              <!--Chart 2-->
+                <div id="datingColumn" data-gchart
+                     data-chartSize="large-chart"
+                     data-chartTitle="UK/US/RU compared"
+                     data-horizontalChartTitle="Country"
+                     data-verticalChartTitle="Amount of DR banners"
+                     data-containerName="datingColumn"
+                     data-dataSource="https://docs.google.com/spreadsheet/ccc?key=0AtXDgp9m-UEHdE13Ry0zS1FCbzdpdV9SbXRjN1VfUWc"
+                     data-gChartType="column">
+                </div>
+            </div>
+        </div>
+
+        <div class="row highlight well">
+            <div class="col-md-8">
+                <!--Chart 2-->
+                <div id="UKPiechart" data-gchart
+                     data-chartSize="xx-large-chart"
+                     data-chartTitle="UK, by Advertiser"
+                     data-horizontalChartTitle="Niche"
+                     data-verticalChartTitle="Amount of DR banners"
+                     data-containerName="UKPiechart"
+                     data-dataSource="https://docs.google.com/spreadsheet/ccc?key=0AtXDgp9m-UEHdE43LU1qZUx4ZTRJOVYyWTNJeDI1b2c"
+                     data-gChartType="pie">
+                </div>
+            </div>    
+                 <!--text-->
+                <div class="col-md-4">
+                <h3>Obvious Outliers:</h3>
+                <h4>MatureDating UK</h4>
+                <p>Clearly a massive advertiser in the UK, taking one sixth of the entire UK AdWords Dating space. They must be doing something right, as they were able to run <em>24 banners for 365 days</em>. </p>
+                <h4>Asian Dating</h4>
+                <p>Single largest dating Ethnicity, accounting for a staggering 38% of the ad-space. Leading advertisers are: idateasia.com, 9.1% and thaimatches.com, 7.6%.</p>
+                <h4>Muslim Dating</h4>
+                <p>Although much more splintered, because of the amount of different sites, Muslim dating has bloomed in the last year. One fifth of UK AdWords ads go to this niche.</p>
+                <h3>Amount of Advertisers by Ethnicity</h3>
+                <div id="UKEthchart" data-gchart
+                     data-chartSize="med-chart"
+                     data-chartTitle="UK, # of Sites by Ethnicity"
+                     data-horizontalChartTitle="Niche"
+                     data-verticalChartTitle="Amount of DR banners"
+                     data-containerName="UKEthchart"
+                     data-dataSource="https://docs.google.com/spreadsheet/ccc?key=0AtXDgp9m-UEHdFRVeTNnekdrSEdSQzdaNHNoQ3lfd1E"
+                     data-gChartType="pie">
+                </div>
+            </div>
+        </div>
+<!-- Niche banners league tables================================================== -->
+    <h2>Dating League Tables</h2>
+         <div class="table-responsive">
+            <table class="table">
+            <thead><th>Top UK Dating Advertiser</th></thead>
+                <tbody>
+                    <tr>
+                        <td>Advertiser: maturedatinguk.com </td>
+                        <td><img src="img/dr/dating/uk/maturedatinguk.com_11.jpg" class="img-responsive img-thumbnail"></a></td>
+                        <td><img src="img/dr/dating/uk/maturedatinguk.com_10.jpg" class="img-responsive img-thumbnail"></a></td>
+                        <td><img src="img/dr/dating/uk/maturedatinguk.com_9.jpg" class="img-responsive img-thumbnail"></a></td>
+                    </tr>
+                </tbody>
+                </table>
+                </div>
+                
+                
+                
+                
+                
+        <div class="table-responsive">
+            <table class="table">
+            <thead><th>big advertisers by Ethnicity</th></thead>
+                <tbody>
+                   <tr>
+                        <td>Advertiser: idateasia.com, Top 2 </td>
+                            <td><img src="img/dr/dating/uk/idateasia.com_1.gif" class="img-responsive img-thumbnail"></a></td>
+                            <td><img src="img/dr/dating/uk/idateasia.com_2.gif" class="img-responsive img-thumbnail"></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+            <thead><th>Multi-image, "chat now" banners</th></thead>
+                <tbody>
+                    <tr>
+                        <td>Advertiser: idateasia.com's 3rd place banner</td>
+                        <td><img src="img/dr/dating/uk/idateasia.com_4.jpg" class="img-responsive img-thumbnail"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Advertiser: thaimatches.com, Top Banner</td>
+                        <td><img src="img/dr/dating/uk/thaimatches.com.jpg" class="img-responsive img-thumbnail"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Advertiser: thaimatches.com, 2nd Banner</td>
+                        <td><img src="img/dr/dating/uk/thaimatches.com_1.gif" class="img-responsive img-thumbnail"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Advertiser: thaimatches.com, 3rd Banner</td>
+                        <td><img src="img/dr/dating/uk/thaimatches.com_2.jpg" class="img-responsive img-thumbnail"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Advertiser: Muslima.com</td>
+                        <td><img src="img/dr/dating/uk/www.Muslima.com.jpg" class="img-responsive img-thumbnail"></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+                
+                
+                
+                
+    <h3>Trend & Changes</h3>
+        <div class="table-responsive">
+            <table class="table">
+            <thead><th>New: multi-image banners</th></thead>
+                <tbody>
+                <p>Starting February 2014, a new type of banner started appearing, and in full force. All over the web these new style "multi-image, chat-now" banners were found. The top advertisers idateasia.com & charmingdate.com changed from the single image to multi-image/with chat or search icons inside the banner.</p>
+                <p>From what I can make out it seems that thaimatches.com started this trend, as the first appearance of this style started in August 2013.</p>
+                <p>However the Top Dog in UK dating is not following this trend: maturedatinguk.com did a small test-run, with men, but this banner did not show up a lot on recent scrapes.</p>
+                <p>iSingles.co.uk is differentiating themselves by running a very simple-looking generic "button banner":</p>
+                    <tr>
+                        <td>isingles.co.uk </td>
+                        <td><img src="img/dr/dating/uk/isingles.co.uk_2.gif" class="img-responsive img-thumbnail"></a></td>
+                    </tr>
+                    <tr>
+                        <td>idateasia.com banner, 1st seen 19 Aug 2013</td>
+                         <td><img src="img/dr/dating/uk/idateasia.com_4.jpg" class="img-responsive img-thumbnail"></a></td>
+                    </tr>
+                    <tr>
+                        <td>thaimatches.com OLD banner </td>
+                        <td><img src="img/dr/dating/uk/thaimatches.com_OLD.jpg" class="img-responsive img-thumbnail"></a></td>
+                    </tr>
+                    <tr>
+                        <td>thaimatches.com NEW banner</td>
+                         <td><img src="img/dr/dating/uk/thaimatches.com_New.gif" class="img-responsive img-thumbnail"></a></td>
+                    </tr>
+                    <tr>
+                        <td>charmingdate.com OLD banner </td>
+                        <td><img src="img/dr/dating/uk/www.charmingdate.com_OLD.jpg" class="img-responsive img-thumbnail"></a></td>
+                    </tr>
+                    <tr>
+                        <td>charmingdate.com NEW banner</td>
+                         <td><img src="img/dr/dating/uk/www.charmingdate.com_New.gif" class="img-responsive img-thumbnail"></a></td>
+                    </tr>
+                    <tr>
+                        <td>maturedatinguk.com Test run</td>
+                         <td><img src="img/dr/dating/uk/maturedatinguk.com_multi.jpg" class="img-responsive img-thumbnail"></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+<!-- About================================================== -->
+
+<div class="col-md-11 col-md-offset-1"> 
+            <div class="row highlight well">
+                <div class="col-md-5">
+            <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script><script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/jenbrannstrom" data-format="inline"></script>
+                </div>
+                <div class="col-md-5">
+                <h3>Need Campaign Management?</h3>
+                <p>Jen-Lars Brannstrom is available on a limited basis for:</p>
+
+                <p>mobile data-analysis, mobile media-buying, mobile RTB campaign management, CPA/CPL/CPI optmisation, 
+                market research & quantitative analyses, user-acquisition 'journey', mobile tracking and attribution, and split-testing.</p>
+
+                <p>We recommend you connect on LinkedIn for a FREE copy of our updated "Mobile Media Buying Analysis". 
+                Just let us know your industry and the type of analysis you're interested in seeing (network, niches, country, etc.) and if Jen-Lars is available to take on your assignment, we'll tailor a package of recent samples to fit your requirements. </p>
+
+                </div>
+            </div>
+
+    </div>
+<!-- Footer================================================== -->
+<footer class="bs-docs-footer" role="contentinfo">
+  <div class="container">
+
+  
+    <div class="bs-docs-social">
+      <ul class="bs-docs-social-buttons">
+        <li>
+          <a href="javascript:document.getElementsByTagName('body')[0].appendChild(document.createElement('script')).setAttribute('src','//geekli.st/javascript/bookmarklet/bookmarklet.js')"><img src="//geekli.st/images/assets/GeekIt_wFace.png"></a>
+        </li>
+        <li class="tweet-btn"> <a href="https://twitter.com/share" class="twitter-share-button" data-link-color="#0069D6" data-url="http://taptap.mobi/charts" data-count="vertical" data-via="TapTap.mobi" data-related="mdo:Media Buying Visualisation">Tweet</a> </li>
+        <li class="follow-btn"> <a href="https://twitter.com/jenbrannstrom" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true" data-count="vertical">Follow @jenbrannstrom</a> </li>
+        <li><script src="http://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script><script type="IN/FollowCompany" data-id="5144636" data-counter="top"></script></li>
+        <li><div class="g-plusone" data-size="tall" expandTo="top"></div>
+            <script type="text/javascript">
+              (function() {
+                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/platform.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+              })();
+            </script>
+        </li>
+      </ul>
+    </div>
+    <p>Charted, visualised and measured with all the care in the world by <a href="http://twitter.com/jenbrannstrom" target="_blank">@jenbrannstrom</a>.</p>
+    <p>Site cobbled together using <a href="http://getbootstrap.com">Bootstrap</a></p>
+    <ul class="bs-docs-footer-links muted">
+      <li>Thanks go to:</li>
+      <li>&middot;</li>
+      <li><a href="https://statace.com">StatAce</a></li>
+      <li>&middot;</li>
+      <li><a href="http://r-project.cran.org">R</a></li>
+      <li>&middot;</li>
+      <li><a href="https://www.datacamp.com">DataCamp</a></li>
+      <li>&middot;</li>
+      <li><a href="https://www.udacity.com">Udacity</a></li>
+    </ul>
+  </div>
+</footer>
+<!-- Bootstrap core JavaScript ================================================== --> 
+<!--<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>--> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script> 
+<script src="http://www.google.com/jsapi" type="text/javascript"></script> 
+<script src="scripts/plugin/smartResize.js"></script> 
+<script src="scripts/plugin/chartsPlugin.js"></script> 
+<script>
+	$(document).chartsPlugin({
+		chartsFont: 'Open Sans',
+		colors: ['#428bca','#d9534f', '#5bc0de', '#f0ad4e', '#5cb85c']
+	});
+</script> 
+<!-- Twitter --> 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-47174250-1', 'taptap.mobi');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
