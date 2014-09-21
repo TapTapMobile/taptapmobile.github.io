@@ -11,13 +11,13 @@ $(function ($) {
 		if( !device.tablet() && !device.mobile() ) {
 
 			/* plays the BG Vimeo or Youtube video if non-mobile device is detected*/ 
-			$.okvideo({ source: '81676731', //set your video source here
+			$.okvideo({ source: '93535331', //set your video source here
 		                    autoplay:true,
 		                    loop: true,
 		                    highdef:true,
 		                    hd:true, 
 		                    adproof: true,
-		                    volume:50 // control the video volume by setting a value from 0 to 99
+		                    volume:0 // control the video volume by setting a value from 0 to 99
 		                 });
 						
 		} else {
