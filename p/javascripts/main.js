@@ -116,8 +116,8 @@ $(document).ready(function() {
           $('#ticker').tweet({
               modpath: './twitter/',
               count: 1,
-              loading_text: 'loading twitter update...',
-              username:'designovastudio'
+              loading_text: 'getting the tweets...',
+              username:'jenbranstrom'
               /* etc... */
           });
         }); 
